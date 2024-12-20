@@ -1,0 +1,72 @@
+/* Navbar container */
+header {
+    position: fixed;
+    top: -100px; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    transition: top 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Navigation links */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+  }
+
+/* Arrow button */
+.toggle-arrow {
+    position: fixed;
+    top: 0%; /* Initially aligned with the hidden navbar */
+    left: 50%;
+    transform: translateX(-50%); /* Center the arrow properly */
+    width: 60px;
+    height: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border-radius: 0 0 5px 5px;
+    z-index: 1000;
+    transition: top 0.5s ease; /* Smooth transition for the arrow */
+}
+
+/* Open navbar on hover */
+.toggle-arrow:hover {
+    top: 60px; /* Move the arrow to top 60px on hover */
+    
+}
+
+
+/* Open navbar when the arrow is hovered */
+.toggle-arrow:hover + header,
+header:hover {
+    top: 0; /* Navbar shows when arrow or navbar itself is hovered */
+}

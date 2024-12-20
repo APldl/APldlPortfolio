@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="aboutme.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="navbar.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+  <button class="toggle-arrow">▼</button>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <img src="project_images/profile.jpg" alt="Adrian's Image" class="hero-image">
+      <h1>
+        <span class="typing1">Hi, my name is Adrian Perry V. Lopez De Leon</span>
+      </h1>
+      <p>Explore my projects and skills.</p>
+    </div>
+  </section>
+
+<section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I am a computer engineer with passion in developing websites, applications, and technology . I have experience in web development, design, and more.</p>
+  
+      <h3>My Skills</h3>
+
+      <div class="skills-container">
+        <!-- HTML Skill -->
+        <div class="skill-container">
+          <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar-foreground html">
+            <span class="skill-name">HTML</span>
+          </div>
+          <span class="skill-text">90%</span>
+        </div>
+      
+        <!-- CSS Skill -->
+        <div class="skill-container">
+          <i class="fab fa-css3-alt skill-icon" style="color: #264de4;"></i>
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar-foreground css">
+            <span class="skill-name">CSS</span>
+          </div>
+          <span class="skill-text">85%</span>
+        </div>
+      
+        <!-- PHP Skill -->
+        <div class="skill-container">
+          <i class="fab fa-php skill-icon" style="color: #777bb3;"></i>
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar-foreground php">
+            <span class="skill-name">PHP</span>
+          </div>
+          <span class="skill-text">75%</span>
+        </div>
+      
+        <!-- JavaScript Skill -->
+        <div class="skill-container">
+          <i class="fab fa-js-square skill-icon" style="color: #f7df1e;"></i>
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar-foreground javascript">
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <span class="skill-text">50%</span>
+        </div>
+      
+        <!-- Python Skill -->
+        <div class="skill-container">
+          <i class="fab fa-python skill-icon" style="color: #4b8bbe;"></i>
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar-foreground python">
+            <span class="skill-name">Python</span>
+          </div>
+          <span class="skill-text">50%</span>
+        </div>
+      
+        <!-- MySQL Skill -->
+        <div class="skill-container">
+          <i class="fas fa-database skill-icon" style="color: #00758f;"></i>
+          <div class="skill-bar-background"></div>
+          <div class="skill-bar-foreground mysql">
+            <span class="skill-name">MySQL</span>
+          </div>
+          <span class="skill-text">60%</span>
+        </div>
+      </div>
+      
+      </div>
+  </section>
+  
+  
+  <section id="portfolio" class="portfolio">
+    <div class="carousel-container">
+      <h2 class="section-title">GALLERY OF MY WORK</h2>
+      <div class="carousel">
+        <img src="project_images/Media (1).jpg" alt="Project 1" data-title="Medicaide Login Page" data-description="The login page from a group project. this is a website for patients and doctors that helps keep track of their medication. Development took 3 months and I was mostly in charge of html and css">
+        <img src="project_images/Media (10).png" alt="Project 2" data-title="Medicaide Account Creation Modal" data-description="My first ever proudest work in html and css. A verification modal which is fully animated">
+        <img src="project_images/image.png" alt="Project 3" data-title="Java Connect FOUR" data-description="This project utilizes object programming in java. My most complex project in 2021">
+        <img src="project_images/Media (3).png" alt="Project 4" data-title="THESIS PROJECT: Attendance Monitoring System (AMS) in my college" data-description="My first 'BIG' Project in website development, multiple user types such as Faculty Member, Attendance Checker, Payroll, Schedule Encoder, Faculty Head, and Admin. I handled everything from html, css, javascript, php, and our database">
+        <img src="project_images/Media (5).png" alt="Project 5" data-title="" data-description="">
+        <img src="project_images/Media (4).png" alt="Project 6" data-title="" data-description="">
+        <img src="project_images/Media (7).png" alt="Project 7" data-title="" data-description="">
+        <img src="project_images/Media (8).png" alt="Project 8" data-title="" data-description="">
+        <img src="project_images/Media (9).png" alt="Project 8" data-title="" data-description="">
+        <img src="project_images/car.jpg" alt="Project 8" data-title="Arduino Programmed Sumo Bot" data-description="Movement Programmed using an arduino microcontroller and controlled by a phone app via bluetooth">
+        <img src="project_images/final.jpg" alt="Project 8" data-title="THESIS PROJECT: Active Botanical Biofiltration system" data-description="programmed to filter air and control the misting system. Also includes air quality sensors that uploads directly to our database and we have a website (local) that graphs the results">
+      </div>
+      <div class="title-container" id="carousel-title">Project 1</div>
+      <div class="description-container" id="carousel-description">A detailed description of Project 1, highlighting its goals and features.</div>
+      <div class="carousel-arrows">
+        <button class="arrow left-arrow">‹</button>
+        <button class="arrow right-arrow">›</button>
+      </div>
+    </div>
+  </section>
+  
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2><span class="typing2">Connect with Me</span></h2>
+    <div class="social-links">
+      <a href="https://github.com/APldl" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/adrian-perry-lopez-de-leon-9459ba33a" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Adrian Perry V. Lopez De Leon. All rights reserved.</p>
+  </footer>
+
+  <script src="smooth_scroll.js"></script>
+  <script src="portfolio_typing.js"></script>
+  <script src="viewport.js"></script>
+  <script src="cards.js"></script>
+</body>
+</html>

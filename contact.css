@@ -1,0 +1,60 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-page height */
+    background-color: #f5f5f5; /* Light background */
+  }
+  
+  .contact .container {
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0077b5; /* LinkedIn Blue (example hover color) */
+  }
+  
+  .social-links a:nth-child(1):hover {
+    color: #6e5494; /* GitHub Purple (official GitHub brand color) */
+  }
+  
+  .contact .social-links .fab {
+    font-size: 5vw; /* Increased icon size */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(160px); /* Start slightly below */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Smooth transition */
+  }
+  
+  .contact .social-links .fab.animate {
+    opacity: 1; /* Make the icon visible */
+    transform: translateY(0); /* Move the icon to its original position */
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .typing2{
+    font-size: 5vw;
+  }
